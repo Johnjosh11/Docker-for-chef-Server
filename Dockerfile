@@ -13,4 +13,4 @@ RUN dpkg-divert --local --rename --add /sbin/initctl
 RUN ln -sf /bin/true /sbin/initctl
 COPY main.sh chef.sh /usr/local/bin/
 VOLUME /var/log
-CMD ["main.sh"]
+CMD ["main.sh"] # It should run here
